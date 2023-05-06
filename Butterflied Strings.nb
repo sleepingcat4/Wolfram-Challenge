@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1954,         59]
+NotebookOptionsPosition[      1363,         41]
+NotebookOutlinePosition[      1787,         57]
+CellTagsIndexPosition[      1744,         54]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ButterflyString", "[", "string_String", "]"}], ":=", 
+  RowBox[{"StringJoin", "[", 
+   RowBox[{"string", ",", 
+    RowBox[{"StringReverse", "[", "string", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.891965749545328*^9, 3.891965749545328*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"e4abd01c-ba66-4868-9d53-358f425aca4c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ButterflyString", "[", "\"\<Wolfram\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.891965757666793*^9, 3.891965757666793*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"913408a5-a023-42e0-8b93-bd18abbddda2"],
+
+Cell[BoxData["\<\"WolframmarfloW\"\>"], "Output",
+ CellChangeTimes->{3.8919657587219515`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"8fc6a2bb-11b1-4a75-a6fe-6252127e53cd"]
+}, Open  ]]
+},
+WindowSize->{582.6, 488.4},
+WindowMargins->{{279, Automatic}, {Automatic, 40.199999999999996`}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1feaaf40-f59b-474e-9ad7-256e074c254c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 362, 7, 48, "Input",ExpressionUUID->"e4abd01c-ba66-4868-9d53-358f425aca4c"],
+Cell[CellGroupData[{
+Cell[945, 31, 227, 3, 28, "Input",ExpressionUUID->"913408a5-a023-42e0-8b93-bd18abbddda2"],
+Cell[1175, 36, 172, 2, 32, "Output",ExpressionUUID->"8fc6a2bb-11b1-4a75-a6fe-6252127e53cd"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

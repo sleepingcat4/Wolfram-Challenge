@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2146,         66]
+NotebookOptionsPosition[      1553,         48]
+NotebookOutlinePosition[      1977,         64]
+CellTagsIndexPosition[      1934,         61]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DropSeenCharacters", "[", "s_String", "]"}], ":=", 
+  RowBox[{"StringJoin", "@", 
+   RowBox[{"DeleteDuplicates", "[", 
+    RowBox[{
+     RowBox[{"Characters", "@", "s"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"ToLowerCase", "[", "#1", "]"}], "===", 
+        RowBox[{"ToLowerCase", "[", "#2", "]"}]}], ")"}], "&"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8919622760853357`*^9, 3.891962278741308*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"622c6c47-fdac-4107-8ec4-1c751dbebb43"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DropSeenCharacters", "[", "\"\<mississippi\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.891962386758768*^9, 3.891962386758768*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"18a4d54f-78b7-425e-ba39-24073648d976"],
+
+Cell[BoxData["\<\"misp\"\>"], "Output",
+ CellChangeTimes->{3.8919641414215097`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"20044964-6493-4726-96e2-49e7f7ec1576"]
+}, Open  ]]
+},
+WindowSize->{582.6, 488.4},
+WindowMargins->{{279, Automatic}, {Automatic, 40.199999999999996`}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4ac56c68-737e-4067-b017-a2914aeca396"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 557, 14, 67, "Input",ExpressionUUID->"622c6c47-fdac-4107-8ec4-1c751dbebb43"],
+Cell[CellGroupData[{
+Cell[1140, 38, 233, 3, 28, "Input",ExpressionUUID->"18a4d54f-78b7-425e-ba39-24073648d976"],
+Cell[1376, 43, 161, 2, 32, "Output",ExpressionUUID->"20044964-6493-4726-96e2-49e7f7ec1576"]
+}, Open  ]]
+}
+]
+*)
+

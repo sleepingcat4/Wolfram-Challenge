@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3228,         95]
+NotebookOptionsPosition[      2524,         75]
+NotebookOutlinePosition[      2966,         92]
+CellTagsIndexPosition[      2923,         89]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ForbiddenSubstring", "[", 
+   RowBox[{"n_Integer", ",", "sub_String"}], "]"}], ":=", 
+  RowBox[{"Select", "[", 
+   RowBox[{
+    RowBox[{"Tuples", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<A\>\"", ",", "\"\<B\>\""}], "}"}], ",", "n"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"StringFreeQ", "[", 
+      RowBox[{
+       RowBox[{"StringJoin", "[", "#", "]"}], ",", "sub"}], "]"}], "&"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.893585537640254*^9, 3.8935855403979177`*^9}, {
+  3.8935856171683965`*^9, 3.893585618030707*^9}, {3.8935856931978645`*^9, 
+  3.893585694547878*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"8e08d446-345c-4fca-a9bb-8f987a0a6b8a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ForbiddenSubstring", "[", 
+  RowBox[{"4", ",", "\"\<AB\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8935856401661243`*^9, 3.8935856401661243`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"ca12da7b-8f85-487c-8b5d-dcb81c69bca1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"A\"\>", ",", "\<\"A\"\>", ",", "\<\"A\"\>", 
+     ",", "\<\"A\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"B\"\>", ",", "\<\"A\"\>", ",", "\<\"A\"\>", 
+     ",", "\<\"A\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"B\"\>", ",", "\<\"B\"\>", ",", "\<\"A\"\>", 
+     ",", "\<\"A\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"B\"\>", ",", "\<\"B\"\>", ",", "\<\"B\"\>", 
+     ",", "\<\"A\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"B\"\>", ",", "\<\"B\"\>", ",", "\<\"B\"\>", 
+     ",", "\<\"B\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.893585641002899*^9, 3.893585697654488*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"459bdbc7-8c4f-44ec-a4a9-4727d52b49b1"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.893585550265544*^9, 3.893585550265544*^9}, 
+   3.8935856123975296`*^9},ExpressionUUID->"6a9f3d8f-46d3-4193-89f0-\
+e0d28eea1a4d"]
+},
+WindowSize->{571.8, 524.4},
+WindowMargins->{{
+  Automatic, 32.40000000000009}, {-166.19999999999993`, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1c9c856e-e370-4319-8171-e7ec7b0123a6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 709, 18, 48, "Input",ExpressionUUID->"8e08d446-345c-4fca-a9bb-8f987a0a6b8a"],
+Cell[CellGroupData[{
+Cell[1292, 42, 252, 4, 28, "Input",ExpressionUUID->"ca12da7b-8f85-487c-8b5d-dcb81c69bca1"],
+Cell[1547, 48, 781, 19, 32, "Output",ExpressionUUID->"459bdbc7-8c4f-44ec-a4a9-4727d52b49b1"]
+}, Open  ]],
+Cell[2343, 70, 177, 3, 28, "Input",ExpressionUUID->"6a9f3d8f-46d3-4193-89f0-e0d28eea1a4d"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
